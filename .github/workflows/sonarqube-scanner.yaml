@@ -15,7 +15,7 @@ on:
 
 jobs:
   secrets-gate:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     outputs:
       ok: ${{ steps.check-secrets.outputs.ok }}
     steps:
